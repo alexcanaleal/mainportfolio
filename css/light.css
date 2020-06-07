@@ -1,0 +1,32 @@
+
+:root {
+    --text-neon-blue: #04a1cd;
+    --text-white: #fff;
+    --text-dark: #212f3b;
+    --transition-speed: 600ms;
+  }
+
+
+#main-header {
+    background-image: url(../images/main-bg-light.png);
+}
+
+.navbar a{
+    color: var(--text-dark);
+}
+
+.navbar a:hover{
+    color: var(--text-neon-blue);
+}
+
+.text-color-toggle{
+    color: var(--text-dark);
+}
+
+.special-a{
+    color: var(--text-neon-blue);
+}
+
+.card{
+    box-shadow: 0 0 20px #333;
+}

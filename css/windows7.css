@@ -1,0 +1,346 @@
+body,
+html {
+	overflow: hidden;
+	height: 100%;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+p {
+	font-size: 12px;
+}
+hr {
+	float: left;
+	height: 1px;
+	background-color: rgba(159, 160, 160, 0.6);
+	border: none;
+	width: 80%;
+}
+
+.main-container {
+	position: relative;
+	/* The image used */
+	background-image: url("../images/windows/windows7.jpg");
+
+	/* Full height */
+	height: 100%;
+
+	/* Center and scale the image nicely */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto; 
+}
+
+.main-navbar {
+	display: flex;
+	justify-content: space-between;
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	border-top: 1px solid rgba(0, 0, 0, 0.2);
+	height: 50px;
+	width: 100%;
+	background: rgb(2, 0, 36);
+	background: linear-gradient(
+		270deg,
+		rgba(2, 0, 36, 1) 0%,
+		rgba(41, 99, 130, 0.76234243697479) 0%,
+		rgba(56, 122, 156, 0.7063200280112045) 49%,
+		rgba(138, 183, 207, 0.7371323529411764) 100%
+	);
+}
+
+#start-container {
+	border-top-right-radius: 10px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	position: absolute;
+	bottom: 50px;
+	width: 400px;
+	height: 450px;
+	background: rgb(109, 175, 201, 0.8);
+	background: linear-gradient(
+		0deg,
+		rgba(109, 175, 201, 1) 0%,
+		rgba(48, 86, 105, 0.9023984593837535) 29%,
+		rgba(54, 100, 125, 0.8799894957983193) 67%,
+		rgba(54, 132, 174, 0.7371323529411764) 100%
+	);
+	display: flex;
+}
+
+#web-container{
+	display: flex;
+}
+
+#start-icon {
+	margin-left: 15px;
+	background-size: 50px;
+	width: 50px;
+	height: 50px;
+	background-image: url("../images/windows/start.png");
+	transition: 0.5s linear;
+}
+
+#chrome-icon{
+	margin-left: 25px;
+	margin-top: 3px;
+	background-size: 40px;
+	width: 40px;
+	height: 40px;
+	background-image: url("../images/windows/chrome.png");
+	border-radius: 5px;
+	border: 1px solid rgba(0, 0, 0, 0);
+	transition: 0.3s linear;
+}
+
+#chrome-icon:hover{
+	border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#start-icon:hover {
+	background-image: url("../images/windows/startHov.png");
+}
+
+#setting {
+	display: flex;
+	color: #fff;
+}
+
+#setting .gray-menu{
+	border-left: 1px solid rgba(0, 0, 0, 0.2); 
+	margin-left: 10px;
+	height: 100%;
+	width: 20px;
+	background: rgb(109, 175, 201, 0.8);
+	background: rgb(2, 0, 36);
+	background: linear-gradient(
+		320deg,
+		rgba(2, 0, 36, 1) 0%,
+		rgba(41, 99, 130, 0.76234243697479) 0%,
+		rgba(56, 122, 156, 0.7063200280112045) 49%,
+		rgba(138, 183, 207, 0.7371323529411764) 100%
+	);
+}
+
+#setting .icons {
+	position: relative;
+	top: calc(50% - 10px);
+	margin-right: 20px;
+	text-shadow: 0 0 3px #000;
+}
+
+#setting .icons span{
+	margin-right: 10px;
+	font-size: 10px;
+}
+
+#setting .icons .icon{
+	margin-right: 10px;
+}
+
+#setting .dates p {
+	margin: 0;
+	padding-top: 5px;
+}
+
+.start-left {
+	width: 60%;
+	height: 100%;
+}
+
+.start-right {
+	width: 40%;
+	height: 100%;
+}
+
+.program-list {
+	border-radius: 2px;
+	height: 85%;
+	margin: 10px;
+	margin-bottom: 1px;
+	background-color: #fff;
+}
+
+.list-item {
+	margin: 0;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.list-item img {
+	vertical-align: middle;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.list-item p {
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.search-list {
+	border-radius: 2px;
+	height: 35px;
+	margin-right: 10px;
+	margin-left: 10px;
+	background-color: #f1f5fb;
+}
+
+.device-list {
+	height: 85%;
+	margin: 10px;
+	margin-bottom: 1px;
+}
+
+.device-list a,
+.device-list p {
+	padding: 0;
+	margin-top: 0px;
+	margin-bottom: 15px;
+	text-decoration: none;
+	color: #fff;
+}
+
+.device-list img {
+	top: -30px;
+	position: relative;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+	height: 50px;
+	border: 5px rgba(161, 207, 230, 0.6) solid;
+	border-radius: 4px;
+}
+
+.shutdown {
+	border-radius: 5px;
+	height: 35px;
+	margin-right: 10px;
+	margin-left: 10px;
+	display: flex;
+}
+
+.shutdown button {
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	margin-top: 5px;
+	height: 25px;
+	color: #fff;
+	background: rgb(45, 104, 136);
+	background: linear-gradient(
+		0deg,
+		rgba(45, 104, 136, 0.7679446778711485) 0%,
+		rgba(129, 177, 203, 0.8799894957983193) 100%
+	);
+}
+
+input[type=text] {
+	height: 20px;
+	border: 1px rgb(159, 160, 160) solid;
+	margin-top: 5px;
+	margin-left: 10px;
+	width: 90%;
+}
+
+::placeholder {
+	/* Chrome, Firefox, Opera, Safari 10.1+ */
+	font-style: italic;
+	text-indent: 5px;
+	opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+	/* Internet Explorer 10-11 */
+	font-style: italic;
+	text-indent: 5px;
+}
+
+::-ms-input-placeholder {
+	/* Microsoft Edge */
+	font-style: italic;
+	text-indent: 5px;
+}
+
+textarea {
+	font-family: 'Caveat', cursive;
+	font-weight: 500;
+	font-size: 20px;
+	width: 100%;
+	height: 100%;
+	resize: none;
+	background-color: rgba(0, 0, 0, 0);
+	border: 0px;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box; /* Firefox, other Gecko */
+	box-sizing: border-box; /* Opera/IE 8+ */
+	overflow-y: hidden; /* Hide vertical scrollbar */
+	overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+textarea:focus {
+	outline: none;
+}
+
+.mydivCont {
+	resize: both;
+	overflow: hidden;
+	position: absolute;
+	z-index: 0;
+	height: 300px;
+	width: 300px;
+	min-height: 60px;
+	min-width: 60px;
+
+	-webkit-box-shadow: 3px 3px 3px 3px rgba(151, 151, 151, 0.5); /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+	-moz-box-shadow: 3px 3px 3px 3px rgba(151, 151, 151, 0.5); /* Firefox 3.5 - 3.6 */
+	box-shadow: 3px 3px 3px 3px rgba(151, 151, 151, 0.5); /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+.mydivCont-sm {
+	overflow: hidden;
+	position: absolute;
+	z-index: 0;
+	height: 110px;
+	width: 80px;
+	border: 1px solid rgba(124, 124, 124, 0);
+}
+
+.mydivCont-sm p {
+	font-size: 12px;
+}
+
+.mydivCont-sm:hover {
+	background-color: rgba(250, 250, 250, 0.2);
+	border: 1px solid rgba(124, 124, 124, 0.4);
+}
+
+.sticky {
+	font-family: 'Caveat', cursive;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: 2;
+	background-color: #fdfcbf;
+}
+
+.sticky-head {
+	width: 100%;
+	height: 30px;
+	background-color: #f8f7b6;
+}
+
+.sticky-head .add {
+	float: left;
+	margin-left: 10px;
+	margin-top: 2px;
+}
+.sticky-head .delete {
+	float: right;
+	margin-right: 10px;
+	margin-top: 2px;
+}
+
+.sticky-body {
+	width: 95%;
+	height: 85%;
+}
