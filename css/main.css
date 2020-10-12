@@ -89,8 +89,9 @@ h1,h2,h3,h3,h4,h5{
 #main-header {
 	height: 100vh;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
-	align-items: flex-end;
+	align-items: center;
 
 	background-image: url(../images/main-bg.jpg);
 	background-position: center;
