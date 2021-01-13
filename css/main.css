@@ -3,6 +3,7 @@
 	--text-white: #fff;
 	--text-dark: #212f3b;
 	--dark-bg: #212f3b;
+	--gray-bg: #efefef;
 	--transition-speed: 200ms;
 }
 
@@ -43,12 +44,18 @@ body {
 	margin: 1rem;
 }
 
-
+p{
+	font-size: 14px;
+}
 
 
 /*Colour details*/
 .dark-bg {
 	background-color: var(--dark-bg);
+}
+
+.gray-bg{
+	background-color: var(--gray-bg);
 }
 
 .item-white {
@@ -66,7 +73,7 @@ h1,h2,h3,h3,h4,h5{
 }
 
 .special-icons:hover{
-	color: black;
+	color: var(--text-neon-blue);
 }
 
 .navbar a{
@@ -107,6 +114,11 @@ h1,h2,h3,h3,h4,h5{
 	height: auto;
 }
 
+.responsive-lg{
+	display: block;
+	width: 100%;
+	height: 20em;
+}
 
 /*Bootstrap Navbar*/
 .collapsing {
@@ -140,7 +152,21 @@ h1,h2,h3,h3,h4,h5{
 }
 
 
+.light-hover{
+	transition: transform .2s;
+}
 
+.light-hover:hover{
+	transform: scale(1.1);
+}
+
+.grayscale {filter: grayscale(100%);
+	transition: 200ms ease-in-out;
+}
+
+.grayscale:hover{
+	filter: none;
+}
 
 .tracking-in-expand {
 	-webkit-animation: tracking-in-expand 1s ease-out both;
