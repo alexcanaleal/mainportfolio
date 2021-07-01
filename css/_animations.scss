@@ -1,0 +1,44 @@
+
+
+/* Standard syntax */
+@keyframes backgroundColorPalette {
+	0% {
+		background: #0e014b;
+	}
+	25% {
+		background: #36034d;
+	}
+	50% {
+		background: #5339c7;
+	}
+	75% {
+		background: #521475;
+	}
+	100% {
+		background: #150734;
+	}
+}
+
+
+@keyframes text-focus-in {
+	0% {
+		-webkit-filter: blur(12px);
+		filter: blur(12px);
+		opacity: 0;
+	}
+	100% {
+		-webkit-filter: blur(0px);
+		filter: blur(0px);
+		opacity: 1;
+	}
+}
+
+@keyframes rotation {
+	from {
+		transform: rotate(360deg);
+	}
+
+	to {
+		transform: rotate(0deg);
+	}
+}
