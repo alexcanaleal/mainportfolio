@@ -12,9 +12,12 @@
   <!--Bootstrap-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/ed2dadc4ab.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/scss/style.css">
 
 </head>
 
@@ -22,95 +25,21 @@
 <body>
 
 
-  <nav class="navbar navbar-expand-lg ">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">
-        <img src="images/Logo.PNG" width="30" height="30" class="d-inline-block align-top" alt="">
-        <span>Alex Canales</span>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="robotics.html">API </a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="windows.html">Windows 7</a>
-          </li>
-  
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  
-  <div class="container py-5">
-    <div class="row my-4 py-5">
-
-      <div class="col-lg-6">
-        <h3>Halo Statistics API</h3>
-        <p class="text-success"><i class="fas fa-circle fa-xs"></i> API Online</span></p>
-        <p>Dolor adipisicing officia aliquip elit consectetur commodo sint fugiat. Adipisicing excepteur qui commodo
-          eiusmod est sint. Exercitation eu ipsum ut dolor exercitation cillum adipisicing. Nisi occaecat pariatur nisi
-          laboris est eu deserunt eiusmod aliqua Lorem exercitation adipisicing. Labore qui laborum quis reprehenderit
-          nisi amet nulla magna in occaecat.</p>
-
-          <a href="https://developer.haloapi.com/docs/services/58acdf27e2f7f71ad0dad84b/operations/Halo-5-Company" target="_blank" class="btn  btn-success">Code</a>
-      </div>
-      <div class="col-lg-3 col-sm-6">
-        <img loading="lazy" class="responsive" src="images/voxel/scorpion-punch-coating.png" alt="Second slide">
-      </div>
-      <div class="col-lg-3 col-sm-6">
-        <img loading="lazy" class="responsive" src="images/voxel/Slayer.png" alt="Second slide">
-      </div>
-    </div>
-   
-    <hr>
-    <div class="row my-4 py-5">
-      <div class="col-lg-6">
-        <h3>Automobile Logo API</h3>
-        <p class="text-danger"><i class="fas fa-circle fa-xs"></i> API Offline</span></p>
-        <p>Dolor adipisicing officia aliquip elit consectetur commodo sint fugiat. Adipisicing excepteur qui commodo
-          eiusmod est sint. Exercitation eu ipsum ut dolor exercitation cillum adipisicing. Nisi occaecat pariatur nisi
-          laboris est eu deserunt eiusmod aliqua Lorem exercitation adipisicing. Labore qui laborum quis reprehenderit
-          nisi amet nulla magna in occaecat.</p>
-      </div>
-      <div class="col-lg-3 col-sm-6">
-        <img loading="lazy" class="responsive" src="images/voxel/Node.png" alt="Second slide">
-      </div>
-      <div class="col-lg-3 col-sm-6">
-        <img loading="lazy" class="responsive" src="images/voxel/CarsLogo.png" alt="Second slide">
-      </div>
-    </div>
-
-   </div>
-
-  <footer>
-    <div class="item-col dark-bg text-white py-5">
-      <div class="item-row">
-        <a class="special-icons" href="https://www.linkedin.com/in/alex-canales" target="_blank"><i
-            class="fa fa-linkedin fa-2x"> </i></a>
-        <a class="special-icons" href="https://github.com/canaleal"> <i class="fa fa-github fa-2x"> </i></a>
-        <a class="special-icons" href="https://bitbucket.org/Canaleal/" target="_blank"><i
-            class="fa fa-bitbucket fa-2x"> </i>
-      </div>
-      <p>alexcanales766@gmail.com</p>
-    </div>
-  </footer>
+  <div id="navbar"></div>
+  <div id="projects_api" class="container py-5"></div>
+  <div id="footer"></div>
 
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+  <!-- Load our React component. -->
+  <script src="js/components/navbar.js" type="text/babel"></script>
+  <script src="js/components/projects_api.js" type="text/babel"></script>
+  <script src="js/components/footer.js" type="text/babel"></script>
+
+
 
 </body>
 

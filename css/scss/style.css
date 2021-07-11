@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 /*Scroll bar*/
@@ -16,7 +16,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #0076fc;
+  background: #8a3ffc;
 }
 
 /*Flex details*/
@@ -67,15 +67,6 @@ p {
   color: #fff;
 }
 
-h1,
-h2,
-h3,
-h3,
-h4,
-h5 {
-  font-weight: bold;
-}
-
 .special-icons {
   color: white;
   -webkit-transition: 300ms linear all;
@@ -83,18 +74,37 @@ h5 {
 }
 
 .special-icons:hover {
-  color: #0076fc;
+  color: #8a3ffc;
 }
 
 .navbar a {
   color: #212f3b;
-  font-weight: bold;
   -webkit-transition: 200ms linear;
   transition: 200ms linear;
 }
 
 .navbar a:hover {
-  color: #0076fc;
+  color: #8a3ffc;
+}
+
+.img-bg {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.img-bg-back {
+  position: relative;
+  top: 0;
+  left: 0;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+}
+
+.img-bg-front {
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
 
 .text-color-toggle {
@@ -217,36 +227,36 @@ h5 {
 /* Standard syntax */
 @-webkit-keyframes backgroundColorPalette {
   0% {
-    background: #0e014b;
+    background: #fa4d56;
   }
   25% {
-    background: #36034d;
+    background: #8a3ffc;
   }
   50% {
-    background: #5339c7;
+    background: #ff0066;
   }
   75% {
-    background: #521475;
+    background: #08bdba;
   }
   100% {
-    background: #150734;
+    background: #0f62fe;
   }
 }
 @keyframes backgroundColorPalette {
   0% {
-    background: #0e014b;
+    background: #fa4d56;
   }
   25% {
-    background: #36034d;
+    background: #8a3ffc;
   }
   50% {
-    background: #5339c7;
+    background: #ff0066;
   }
   75% {
-    background: #521475;
+    background: #08bdba;
   }
   100% {
-    background: #150734;
+    background: #0f62fe;
   }
 }
 

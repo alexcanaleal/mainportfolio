@@ -13,9 +13,11 @@
   <!--Bootstrap-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/ed2dadc4ab.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/scss/style.css">
 
 
 </head>
@@ -23,52 +25,26 @@
 <body>
 
 
-  <nav class="navbar navbar-expand-lg ">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">
-        <img src="images/Logo.PNG" width="30" height="30" class="d-inline-block align-top" alt="">
-        <span>Alex Canales</span>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="robotics.html">API </a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="windows.html">Windows 7</a>
-          </li>
-
-        </ul>
-      </div>
-    </div>
-  </nav>
+  <div id="navbar"></div>
 
 
 
-  <div class="container-fluid header-lg">
-    <div class="row mt-5 py-5 text-white text-center">
+  <div class="container-fluid header-lg text-white">
+    <div class="row mt-5 py-5  text-center">
       <div class="col-lg-12 text-focus-in">
-        <h2 class="text-white">Front End Web Developer | Computer Science Student</h2>
+        <h2 >Machine Learning Developer | Computer Science Student</h2>
       </div>
     </div>
-    <div class="row mb-5 py-5 text-white text-center ">
+    <div class="row mb-5 py-5 text-center ">
       <div class="col-lg-12 text-focus-in">
         <div class="item-row">
           <a class="special-icons" rel="noopener" href="https://www.linkedin.com/in/alex-canales" target="_blank"><i
               class="fa fa-linkedin fa-2x"> </i></a>
-          <a class="special-icons" rel="noopener" target="_blank" href="https://github.com/canaleal"> <i class="fa fa-github fa-2x">
+          <a class="special-icons" rel="noopener" target="_blank" href="https://github.com/canaleal"> <i
+              class="fa fa-github fa-2x">
             </i></a>
-          <a class="special-icons" rel="noopener" target="_blank" href="https://bitbucket.org/Canaleal/" target="_blank"><i
-              class="fa fa-bitbucket fa-2x"> </i>
+          <a class="special-icons" rel="noopener" target="_blank" href="https://bitbucket.org/Canaleal/"
+            target="_blank"><i class="fa fa-bitbucket fa-2x"> </i>
         </div>
       </div>
       <div class="col-lg-12 text-focus-in">
@@ -77,176 +53,22 @@
     </div>
   </div>
 
+  <div id="about" class="container py-5"></div>
+  <div id="company" class="container-fluid gray-bg"> </div>
+  <div id="projects" class="container py-5" ></div>
+  <div id="footer"></div>
 
+  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 
-  <div id="about" class="mt-5">
-    <div class="container ">
-      <div class="row py-5">
-
-        <div class="col-lg-6">
-          <h2>About</h2>
-          <p>Lorem fugiat labore consequat excepteur tempor in Lorem cupidatat minim cupidatat laboris enim. Consectetur
-            Lorem sit eu commodo enim proident eiusmod magna officia irure in. Voluptate id dolor adipisicing id duis
-            laborum quis ad non aliqua. Lorem id non ex quis consectetur.</p>
-
-        </div>
-
-        
-        <div class="col-lg-3 col-sm-6">
-          <img loading="lazy" class="responsive" src="images/voxel/chicken-sm-light.png" alt="Second slide">
-        </div>
-        <div class="col-lg-3 col-sm-6">
-          <img loading="lazy" class="responsive" src="images/voxel/gator-sm-light.png" alt="Second slide">
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container-fluid gray-bg">
-    <div class="container py-5">
-      <div class="row my-4">
-        <div class="col-lg-3 col-sm-6">
-          <img loading="lazy" class="responsive light-hover " src="images/Company/inovex.png" alt="inovex">
-        </div>
-        <div class="col-lg-3 col-sm-6">
-          <img loading="lazy" class="responsive light-hover " src="images/Company/Follower.png" alt="inovex">
-        </div>
-        <div class="col-lg-3 col-sm-6">
-          <img loading="lazy" class="responsive light-hover " src="images/Company/Fiverr.png" alt="inovex">
-        </div>
-        <div class="col-lg-3 col-sm-6">
-          <img loading="lazy" class="responsive light-hover " src="images/Company/UniversityES.png" alt="inovex">
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-
-  <div class="container py-5">
-    <div class="row my-4 py-5">
-
-      <div class="col-lg-6">
-        <h3>Machine Learning Development</h3>
-        <p>Dolor adipisicing officia aliquip elit consectetur commodo sint fugiat. Adipisicing excepteur qui commodo
-          eiusmod est sint. Exercitation eu ipsum ut dolor exercitation cillum adipisicing. Nisi occaecat pariatur nisi
-          laboris est eu deserunt eiusmod aliqua Lorem exercitation adipisicing. Labore qui laborum quis reprehenderit
-          nisi amet nulla magna in occaecat.</p>
-      </div>
-      <div class="col-lg-3 col-sm-6">
-        <img loading="lazy" class="responsive" src="images/voxel/TensorFlow.png" alt="Second slide">
-      </div>
-      <div class="col-lg-3 col-sm-6">
-        <img loading="lazy" class="responsive" src="images/voxel/ML.png" alt="Second slide">
-      </div>
-    </div>
-    <hr>
-    <div class="row my-4 py-5">
-
-      <div class="col-lg-6">
-        <h3>OpenCV Plate and Face Recognition</h3>
-        <p>Ullamco id officia aliqua nostrud deserunt pariatur excepteur ullamco. Occaecat officia do aliquip consequat
-          nostrud irure culpa culpa consequat laborum. Officia velit aute mollit velit quis non culpa consectetur
-          occaecat occaecat ex et non nostrud. Ea duis nisi adipisicing occaecat commodo cillum. Aute nostrud elit irure
-          nisi aliqua incididunt nostrud id enim proident. Esse fugiat qui consequat reprehenderit labore in non ut
-          reprehenderit veniam nisi veniam. Pariatur esse laborum sit ut velit culpa excepteur mollit anim.</p>
-      </div>
-      <div class="col-lg-3 col-sm-6">
-        <img loading="lazy" class="responsive" src="images/voxel/Face Detect.png" alt="Second slide">
-      </div>
-      <div class="col-lg-3 col-sm-6">
-        <img loading="lazy" class="responsive" src="images/voxel/CarCV.png" alt="Second slide">
-      </div>
-    </div>
-    <hr>
-    <div class="row my-4 py-5">
-      <div class="col-lg-6">
-        <h3>Automobile VIN Manager</h3>
-        <p>Dolor adipisicing officia aliquip elit consectetur commodo sint fugiat. Adipisicing excepteur qui commodo
-          eiusmod est sint. Exercitation eu ipsum ut dolor exercitation cillum adipisicing. Nisi occaecat pariatur nisi
-          laboris est eu deserunt eiusmod aliqua Lorem exercitation adipisicing. Labore qui laborum quis reprehenderit
-          nisi amet nulla magna in occaecat.</p>
-
-          <a href="https://bitbucket.org/Canaleal/vinvault/src/master/" target="_blank" class="btn  btn-success">Code</a>
-      </div>
-      <div class="col-lg-6">
-        <img loading="lazy" class="responsive" src="images/vinVault/Car.png" alt="Second slide">
-      </div>
-    </div>
-
-    <hr>
-    <div class="row my-4 py-5">
-      <div class="col-lg-6">
-        <h3>eCommerce Image Repository</h3>
-        <p>Dolor adipisicing officia aliquip elit consectetur commodo sint fugiat. Adipisicing excepteur qui commodo
-          eiusmod est sint. Exercitation eu ipsum ut dolor exercitation cillum adipisicing. Nisi occaecat pariatur nisi
-          laboris est eu deserunt eiusmod aliqua Lorem exercitation adipisicing. Labore qui laborum quis reprehenderit
-          nisi amet nulla magna in occaecat.</p>
-
-          <a href="https://github.com/canaleal/BlueKoi" target="_blank" class="btn  btn-success">Code</a>
-
-      </div>
-      <div class="col-lg-6">
-        <img loading="lazy" class="responsive" src="images/bluekoi/Koiui3.png" alt="Second slide">
-      </div>
-    </div>
-
-
-    <hr>
-    <div class="row my-4 py-5">
-      <div class="col-lg-6">
-        <h3>Toronto Housing Market Analysis</h3>
-        <p>Dolor adipisicing officia aliquip elit consectetur commodo sint fugiat. Adipisicing excepteur qui commodo
-          eiusmod est sint. Exercitation eu ipsum ut dolor exercitation cillum adipisicing. Nisi occaecat pariatur nisi
-          laboris est eu deserunt eiusmod aliqua Lorem exercitation adipisicing. Labore qui laborum quis reprehenderit
-          nisi amet nulla magna in occaecat.</p>
-      </div>
-      <div class="col-lg-6">
-        <img loading="lazy" class="responsive" src="images/voxel/Map-NoBg.png" alt="Second slide">
-      </div>
-    </div>
-
-    <hr>
-    <div class="row my-4 py-5">
-      <div class="col-lg-6">
-        <h3>Automobile Web Scraping and Node API</h3>
-        <p>Dolor adipisicing officia aliquip elit consectetur commodo sint fugiat. Adipisicing excepteur qui commodo
-          eiusmod est sint. Exercitation eu ipsum ut dolor exercitation cillum adipisicing. Nisi occaecat pariatur nisi
-          laboris est eu deserunt eiusmod aliqua Lorem exercitation adipisicing. Labore qui laborum quis reprehenderit
-          nisi amet nulla magna in occaecat.</p>
-      </div>
-      <div class="col-lg-3 col-sm-6">
-        <img loading="lazy" class="responsive" src="images/voxel/Node.png" alt="Second slide">
-      </div>
-      <div class="col-lg-3 col-sm-6">
-        <img loading="lazy" class="responsive" src="images/voxel/CarsLogo.png" alt="Second slide">
-      </div>
-    </div>
-  </div>
-
-
-
-  <footer>
-    <div class="item-col dark-bg text-white py-5">
-      <div class="item-row">
-        <a class="special-icons" rel="noopener" href="https://www.linkedin.com/in/alex-canales" target="_blank"><i
-            class="fa fa-linkedin fa-2x"> </i></a>
-        <a class="special-icons" rel="noopener" href="https://github.com/canaleal"> <i class="fa fa-github fa-2x"> </i></a>
-        <a class="special-icons" rel="noopener" href="https://bitbucket.org/Canaleal/" target="_blank"><i
-            class="fa fa-bitbucket fa-2x"> </i>
-      </div>
-      <p>alexcanales766@gmail.com</p>
-    </div>
-  </footer>
-
-
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"></script>
-
-
+  <!-- Load our React component. -->
+  <script src="js/components/navbar.js" type="text/babel"></script>
+  <script src="js/components/about.js" type="text/babel"></script>
+  <script src="js/components/projects.js" type="text/babel"></script>
+  <script src="js/components/company.js" type="text/babel"></script>
+  <script src="js/components/footer.js" type="text/babel"></script>
+  
 
 </body>
 

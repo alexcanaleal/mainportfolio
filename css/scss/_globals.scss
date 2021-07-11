@@ -3,7 +3,7 @@ html {
 	scroll-behavior: smooth;
 }
 body {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 /*Scroll bar*/
@@ -16,7 +16,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-	background: $text-neon-blue;
+	background: $text-neon-purple;
 }
 
 
@@ -55,14 +55,6 @@ p {
 	color: $text-white;
 }
 
-h1,
-h2,
-h3,
-h3,
-h4,
-h5 {
-	font-weight: bold;
-}
 
 
 .special-icons {
@@ -70,7 +62,7 @@ h5 {
 	transition: 300ms linear all;
 
     &:hover{
-        color: $text-neon-blue;
+        color: $text-neon-purple;
     }
 }
 
@@ -79,15 +71,37 @@ h5 {
 
     a{
         color: $text-dark;
-        font-weight: bold;
+       
         transition: 200ms linear;
     
         &:hover{
-            color: $text-neon-blue;
+            color: $text-neon-purple;
         }
     }
 	
 }
+
+
+.img-bg {
+	position: relative;
+	top: 0;
+	left: 0;
+
+	&-back{
+		position: relative;
+		top: 0;
+		left: 0;
+		filter: blur(3px);
+	}
+
+	&-front{
+		position: absolute;
+		top: 10px;
+		left: 10px;
+	}
+
+  }
+
 
 
 .text-color-toggle {
