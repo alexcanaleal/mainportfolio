@@ -13,9 +13,11 @@
   <!--Bootstrap-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/ed2dadc4ab.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/scss/style.css">
 
 
 </head>
@@ -23,243 +25,51 @@
 <body>
 
 
-  <nav class="navbar navbar-expand-lg ">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">
-        <img src="images/Logo.PNG" width="30" height="30" class="d-inline-block align-top" alt="">
-        <span>Alex Canales</span>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="python.html">Python </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="cc++.html">C / C++ / C#</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="mobile.html">Mobile</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="windows.html">Windows 7</a>
-          </li>
-
-        </ul>
-      </div>
-    </div>
-  </nav>
+  <div id="navbar"></div>
 
 
 
-  <div class="container-fluid" id="main-header">
-    <div class="row mt-5 py-5 text-white text-center">
+  <div class="container-fluid header-lg text-white">
+    <div class="row mt-5 py-5  text-center">
       <div class="col-lg-12 text-focus-in">
-        <h2 class="text-white">Front End Web Developer | Computer Science Student</h2>
+        <h2 >Machine Learning Developer | Computer Science Student</h2>
       </div>
     </div>
-    <div class="row mb-5 py-5 text-white text-center ">
+    <div class="row mb-5 py-5 text-center ">
       <div class="col-lg-12 text-focus-in">
         <div class="item-row">
-          <a class="special-icons" href="https://www.linkedin.com/in/alex-canales" target="_blank"><i
+          <a class="special-icons" rel="noopener" href="https://www.linkedin.com/in/alex-canales" target="_blank"><i
               class="fa fa-linkedin fa-2x"> </i></a>
-          <a class="special-icons" target="_blank" href="https://github.com/canaleal"> <i class="fa fa-github fa-2x"> </i></a>
-          <a class="special-icons" target="_blank" href="https://bitbucket.org/Canaleal/" target="_blank"><i
-              class="fa fa-bitbucket fa-2x"> </i>
+          <a class="special-icons" rel="noopener" target="_blank" href="https://github.com/canaleal"> <i
+              class="fa fa-github fa-2x">
+            </i></a>
+          <a class="special-icons" rel="noopener" target="_blank" href="https://bitbucket.org/Canaleal/"
+            target="_blank"><i class="fa fa-bitbucket fa-2x"> </i>
         </div>
       </div>
       <div class="col-lg-12 text-focus-in">
-        <a href="#about" id="learn-more" class="btn btn-outline-light btn-lg">Learn More</a>
+        <a href="#about" id="learn-more" rel="noopener" class="btn btn-outline-light btn-lg">Learn More</a>
       </div>
     </div>
   </div>
 
- 
+  <div id="about" class="container py-5"></div>
+  <div id="company" class="container-fluid gray-bg"> </div>
+  <div id="projects" class="container py-5" ></div>
+  <div id="footer"></div>
 
-  <div id="about" class="mt-5 py-5">
-    <div class="container ">
-      <div class="row">
+  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 
-        <div class="col-lg-6">
-          <h2>About</h2>
-          <P>I'm a Computer Science Student based in Oakville, Ontario who specializes in Mobile and Web
-            Development.</P>
-          <P> My skills include responsive web design, and front end development, but I've also done in some backend
-            work too. Check out my work below, or github if you want to see the code base.</P>
-         
+  <!-- Load our React component. -->
+  <script src="js/components/navbar.js" type="text/babel"></script>
+  <script src="js/components/about.js" type="text/babel"></script>
+  <script src="js/components/projects.js" type="text/babel"></script>
+  <script src="js/components/company.js" type="text/babel"></script>
+  <script src="js/components/footer.js" type="text/babel"></script>
+  
 
-        </div>
-
-        <div class="col-lg-6">
-          <div class="row">
-            <div class="col-lg-6">
-              <img loading="lazy" class="responsive" src="images/voxel/chicken-sm-light.png" alt="Second slide">
-            </div>
-
-            <div class="col-lg-6">
-              <img loading="lazy" class="responsive" src="images/voxel/gator-sm-light.png" alt="Second slide">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container-fluid gray-bg">
-    <div class="container py-5">
-      <div class="row my-4">
-        <div class="col-lg-3">
-          <img loading="lazy" class="responsive light-hover" src="images/Company/inovex.png" alt="inovex">
-        </div>
-        <div class="col-lg-3">
-          <img loading="lazy" class="responsive light-hover" src="images/Company/Follower.png" alt="inovex">
-        </div>
-        <div class="col-lg-3">
-          <img loading="lazy" class="responsive light-hover" src="images/Company/Fiverr.png" alt="inovex">
-        </div>
-        <div class="col-lg-3">
-          <img loading="lazy" class="responsive light-hover" src="images/Company/UniversityES.png" alt="inovex">
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-
-
-
-  <div class="container py-5">
-    <div class="row my-4">
-      <div class="col-lg-6">
-        <img class="card-img-top grayscale" src="images/vinVault/VinVaultLogo.png" alt="Card image cap">
-        <div class="row my-2">
-          <div class="col-lg-12">
-            <p class="btn btn-primary">React</p>
-            <p class="btn btn-secondary">Android / IOS / Web</p>
-            <p class="btn btn-secondary">Firebase</p>
-            <p class="btn btn-secondary">NHTSA API</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-6 text-color-toggle">
-        <h3>VIN Vault</h3>
-        <P>VIN Vault is a fully usable data visualization and service report able to locate and find the
-          details of any vehicle in the NHTSA database. With it’s easy to use/ seamless setup, users are
-          be able to view VINs by either scanning or typing in the VIN. (Note: The Web version cannot Scan
-          Inputs)
-        </P>
-        <a target="_blank" href="https://vin-vault.netlify.app/" class="btn btn-secondary">Test VIN Vault</a>
-        <a href="https://bitbucket.org/Canaleal/vinvault/src/master/" target="_blank" class="btn btn-primary">Code</a>
-      </div>
-
-
-      <div class="col-lg-6 ">
-        <img class="card-img-top grayscale" src="images/station/AtmosLogo.png" alt="Card image cap">
-        <div class="row my-2">
-          <div class="col-lg-12">
-            <p class="btn btn-primary">C#</p>
-            <p class="btn btn-secondary">JSON</p>
-            <p class="btn btn-secondary">XAML</p>
-            <p class="btn btn-secondary">Vector Imaging</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-6 text-color-toggle">
-        <h3>Atmos Station</h3>
-        <P>Atmos Station is a simple 2D Galaga game made in C# Universal Windows with a roboust trading
-          system and different planets to land at. Although this was the first large project I created in College with
-          my peer,
-          each year I update the game with better visuals and more optimized code. Currently, the game is in it's 3rd
-          iteration.
-        </P>
-        <p>Please note that Atmos is currently a UWP C# application. There is no way to play the game on the Web.</p>
-
-        <a href="https://github.com/canaleal/AtmosStation" target="_blank" class="btn btn-primary">Code</a>
-
-
-
-      </div>
-
-      <div class="col-lg-6">
-        <img class="card-img-top grayscale rotate" src="images/bluekoi/KoiLogo.png" alt="Card image cap">
-        <div class="row my-2">
-          <div class="col-lg-12">
-            <p class="btn btn-primary">HTML / CSS / JS</p>
-            <p class="btn btn-secondary">ASP .Net Core</p>
-
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-6 text-color-toggle">
-        <h3>Blue Koi</h3>
-        <P>
-          Blue Koi Art-Linker is a visualization, eCommerce tool that allows users to view, save, and download art,
-          photos, models, and drafts from all over the internet. Users can sign up, manage their account, search images
-          using an input box and selector, and manage their saved images.
-
-        </P>
-        <P>Currently, this application is recieving major updates.</P>
-        <a href="https://github.com/canaleal/BlueKoi" target="_blank" class="btn btn-primary">Code</a>
-
-      </div>
-
-      <div class="col-lg-6">
-        <img class="card-img-top grayscale" src="images/voxel/RDTracker.png"
-            alt="Card image cap">
-        <div class="row my-2">
-          <div class="col-lg-12">
-            <p class="btn btn-primary">Python</p>
-            <p class="btn btn-secondary">Mongo DB</p>
-            <p class="btn btn-secondary">Reddit Py</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-6">
-        <h3>Pix Reddit Tracker</h3>
-        <P>Pix Reddit Tracker is an application that allows users to download and save multiple images from Reddit.
-          The current build lets users search Reddit via subreddits, users, number of images, save location, and type of
-          images.
-        </P>
-        <p>The app also makes use of MongoDB to save the recent search.</P>
-        <a href="https://github.com/canaleal/BlueKoi" target="_blank" class="btn btn-primary">Code</a>
-      </div>
-
-    </div>
-
-
-  </div>
-
-
-
-  <footer>
-    <div class="item-col dark-bg text-white">
-      <div class="item-row">
-        <a class="special-icons" href="https://www.linkedin.com/in/alex-canales" target="_blank"><i
-            class="fa fa-linkedin fa-2x"> </i></a>
-        <a class="special-icons" href="https://github.com/canaleal"> <i class="fa fa-github fa-2x"> </i></a>
-        <a class="special-icons" href="https://bitbucket.org/Canaleal/" target="_blank"><i
-            class="fa fa-bitbucket fa-2x"> </i>
-      </div>
-      <p>alexcanales766@gmail.com</p>
-    </div>
-  </footer>
-
-
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"></script>
-
-   
- 
 </body>
 
 </html>
