@@ -14,7 +14,7 @@ class Navbar extends React.Component {
         <nav className="navbar navbar-expand-lg ">
             <div className="container">
                 <a className="navbar-brand" href="index.html">
-                    <img src="images/Logo.PNG" width="30" height="30" className="d-inline-block align-top mr-2" alt=""/>
+                    <img src="src/images/Logo.PNG" width="30" height="30" className="d-inline-block align-top mr-2" alt=""/>
                     <span>Alex Canales</span>
                 </a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"

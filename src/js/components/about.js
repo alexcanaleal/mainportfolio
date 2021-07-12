@@ -20,10 +20,10 @@ class About extends React.Component {
             </div>
             
             <div className="col-lg-3 col-sm-6">
-                <img loading="lazy" className="responsive" src="images/voxel/nature.jpeg" alt="Second slide"/>
+                <img loading="lazy" className="responsive" src="src/images/voxel/nature.jpeg" alt="Second slide"/>
             </div>
             <div className="col-lg-3 col-sm-6">
-                <img loading="lazy" className="responsive" src="images/voxel/nature2.jpeg" alt="Second slide"/>
+                <img loading="lazy" className="responsive" src="src/images/voxel/nature2.jpeg" alt="Second slide"/>
             </div>
         </div>
       );

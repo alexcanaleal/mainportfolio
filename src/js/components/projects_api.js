@@ -15,16 +15,16 @@ class Projects_Api extends React.Component {
                 "online":true, 
                 "desc" : "Dolor adipisicing officia aliquip elit consectetur commodo sint fugiat. Adipisicing excepteur qui commodo eiusmod est sint. Exercitation eu ipsum ut dolor exercitation cillum adipisicing. Nisi occaecat pariatur nisi laboris est eu deserunt eiusmod aliqua Lorem exercitation adipisicing. Labore qui laborum quis reprehenderit nisi amet nulla magna in occaecat.", 
                 "link" : "https://developer.haloapi.com/docs/services/58acdf27e2f7f71ad0dad84b/operations/Halo-5-Company",
-                "img1": "images/voxel/scorpion-punch-coating.png", 
-                "img2": "images/voxel/Slayer.png" 
+                "img1": "src/images/voxel/scorpion-punch-coating.png", 
+                "img2": "src/images/voxel/Slayer.png" 
             },
             {
                 "name": "Automobile Logo API", 
                 "online":false, 
                 "desc" : "Dolor adipisicing officia aliquip elit consectetur commodo sint fugiat. Adipisicing excepteur qui commodo eiusmod est sint. Exercitation eu ipsum ut dolor exercitation cillum adipisicing. Nisi occaecat pariatur nisi laboris est eu deserunt eiusmod aliqua Lorem exercitation adipisicing. Labore qui laborum quis reprehenderit nisi amet nulla magna in occaecat.", 
                 "link" : "",
-                "img1": "images/voxel/Node.png", 
-                "img2": "images/voxel/CarsLogo.png" 
+                "img1": "src/images/voxel/Node.png", 
+                "img2": "src/images/voxel/CarsLogo.png" 
             }
         ]
 

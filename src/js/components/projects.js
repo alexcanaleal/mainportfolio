@@ -14,35 +14,35 @@ class Projects extends React.Component {
                 "name": "Machine Learning Development",
                 "desc": "Dolor adipisicing officia aliquip elit consectetur commodo sint fugiat. Adipisicing excepteur qui commodo eiusmod est sint. Exercitation eu ipsum ut dolor exercitation cillum adipisicing. Nisi occaecat pariatur nisi laboris est eu deserunt eiusmod aliqua Lorem exercitation adipisicing. Labore qui laborum quis reprehenderit nisi amet nulla magna in occaecat.",
                 "link": "",
-                "img1": "images/voxel/TensorFlow.png",
-                "img2": "images/voxel/ML.png"
+                "img1": "src/images/voxel/TensorFlow.png",
+                "img2": "src/images/voxel/ML.png"
             },
             {
                 "name": "OpenCV Plate and Face Recognition",
                 "desc": "Dolor adipisicing officia aliquip elit consectetur commodo sint fugiat. Adipisicing excepteur qui commodo eiusmod est sint. Exercitation eu ipsum ut dolor exercitation cillum adipisicing. Nisi occaecat pariatur nisi laboris est eu deserunt eiusmod aliqua Lorem exercitation adipisicing. Labore qui laborum quis reprehenderit nisi amet nulla magna in occaecat.",
                 "link": "",
-                "img1": "images/voxel/Face Detect.png",
-                "img2": "images/voxel/CarCV.png"
+                "img1": "src/images/voxel/Face Detect.png",
+                "img2": "src/images/voxel/CarCV.png"
             },
             {
                 "name": "Automobile VIN Manager",
                 "desc": "VIN Vault is a fully usable data visualization and service report able to locate and find the details of any vehicle in the NHTSA database. With it’s easy to use/ seamless setup, users are be able to view VINs by either scanning or typing in the VIN.",
                 "link": "https://bitbucket.org/Canaleal/vinvault/src/master/",
-                "img1": "images/vinVault/Car.png",
+                "img1": "src/images/vinVault/Car.png",
                 "img2": ""
             },
             {
                 "name": "eCommerce Image Repository",
                 "desc": "Blue Koi Art-Linker is a visualization, eCommerce tool that allows users to view, save, and download art, photos, models, and drafts from all over the internet. Users can sign up, manage their account, search images using an input box and selector, and manage their saved images.",
                 "link": "https://github.com/canaleal/BlueKoi",
-                "img1": "images/bluekoi/Koiui3.png",
+                "img1": "src/images/bluekoi/Koiui3.png",
                 "img2": ""
             },
             {
                 "name": "Toronto Housing Market Analysis",
                 "desc": "Used various online datasets generated and cleaned and analyzed them using NumPy/Pandas. I used Pandas to analyze things like confidence intervals and probability, and then afterwards visualized the data findings using Matplotlib.",
                 "link": "",
-                "img1": "images/voxel/Map-NoBg.png",
+                "img1": "src/images/voxel/Map-NoBg.png",
                 "img2": ""
             }
         ];

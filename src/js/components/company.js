@@ -10,7 +10,7 @@ class Company extends React.Component {
 
   render() {
 
-    const links = ["images/Company/inovex.png", "images/Company/Follower.png", "images/Company/Fiverr.png", "images/Company/UniversityES.png" ]
+    const links = ["src/images/Company/inovex.png", "src/images/Company/Follower.png", "src/images/Company/Fiverr.png", "src/images/Company/UniversityES.png" ]
 
     return (
         <div className="container py-5">
