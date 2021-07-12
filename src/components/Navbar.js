@@ -28,7 +28,7 @@ class Navbar extends React.Component {
                         <a className="nav-link" href="index.html">Home <span className="sr-only">(current)</span></a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="robotics.html">API </a>
+                        <a className="nav-link" href="api.html">API </a>
                     </li>
 
                     <li className="nav-item">

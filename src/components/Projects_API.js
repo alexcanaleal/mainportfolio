@@ -29,7 +29,8 @@ class Projects_Api extends React.Component {
         ]
 
         return (
-                data.map((d, index) => (
+            <div className="container py-5">
+                {data.map((d, index) => (
                     <div key={index} className="row my-4 py-5">
                         <div className="col-lg-6">
                             <h3>{d.name}</h3>
@@ -69,7 +70,9 @@ class Projects_Api extends React.Component {
                        
                     </div>
                     
-                ))
+                ))}
+            </div>
+                
     
         );
     }
