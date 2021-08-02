@@ -9,7 +9,7 @@ class Projects extends React.Component {
             {
                 "name": "Machine Learning Development",
                 "online": true,
-                "desc": "Dolor adipisicing officia aliquip elit consectetur commodo sint fugiat. Adipisicing excepteur qui commodo eiusmod est sint. Exercitation eu ipsum ut dolor exercitation cillum adipisicing. Nisi occaecat pariatur nisi laboris est eu deserunt eiusmod aliqua Lorem exercitation adipisicing. Labore qui laborum quis reprehenderit nisi amet nulla magna in occaecat.",
+                "desc": "Fracture risk assessments are essential to evaluate and prevent osteoporotic fractures. While it is desirable to collect all relevant data about patients regarding their susceptibility to fractures to make an accurate assessment, in real-world environments osteoporosis patient data can be incorrect, inconsistent, or missing. A crucial component to calculating the fracture risk is the Bone Mineral Density (BMD) T-score (used in fracture risk calculators: e.g., FRAX,  CAROC).",
                 "link": "",
                 "img1": "src/images/voxel/TensorFlow.png",
                 "img2": "src/images/voxel/ML.png"
@@ -41,7 +41,7 @@ class Projects extends React.Component {
             {
                 "name": "Toronto Housing Market Analysis",
                 "online": true,
-                "desc": "Used various online datasets generated and cleaned and analyzed them using NumPy/Pandas. I used Pandas to analyze things like confidence intervals and probability, and then afterwards visualized the data findings using Matplotlib.",
+                "desc": "The Zoocasa API was selected as the resource due to it’s efficient search on currently listed and previously sold properties. The program extracts the data using Beautifulsoup, and cleans the data using Pandas.",
                 "link": "",
                 "img1": "src/images/voxel/Map-NoBg.png",
                 "img2": ""
