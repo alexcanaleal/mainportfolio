@@ -13,7 +13,7 @@ class Projects_Api extends React.Component {
             { 
                 "name": "Halo Statistics API", 
                 "online":true, 
-                "desc" : "Dolor adipisicing officia aliquip elit consectetur commodo sint fugiat. Adipisicing excepteur qui commodo eiusmod est sint. Exercitation eu ipsum ut dolor exercitation cillum adipisicing. Nisi occaecat pariatur nisi laboris est eu deserunt eiusmod aliqua Lorem exercitation adipisicing. Labore qui laborum quis reprehenderit nisi amet nulla magna in occaecat.", 
+                "desc" : "The Halo Stats API collects and finds the service record details of all Halo Players in Halo 5. The API also returns Spartan images and gamer tags.", 
                 "link" : "https://developer.haloapi.com/docs/services/58acdf27e2f7f71ad0dad84b/operations/Halo-5-Company",
                 "img1": "src/images/voxel/scorpion-punch-coating.png", 
                 "img2": "src/images/voxel/Slayer.png" 
@@ -21,7 +21,7 @@ class Projects_Api extends React.Component {
             {
                 "name": "Automobile Logo API", 
                 "online":false, 
-                "desc" : "Dolor adipisicing officia aliquip elit consectetur commodo sint fugiat. Adipisicing excepteur qui commodo eiusmod est sint. Exercitation eu ipsum ut dolor exercitation cillum adipisicing. Nisi occaecat pariatur nisi laboris est eu deserunt eiusmod aliqua Lorem exercitation adipisicing. Labore qui laborum quis reprehenderit nisi amet nulla magna in occaecat.", 
+                "desc" : "The Vehicle Specifications API provides access to a library of vehicle Logos. For example, searching 'Mercedes' retrieves the latest Logo from the Cars Logo website.", 
                 "link" : "",
                 "img1": "src/images/voxel/Node.png", 
                 "img2": "src/images/voxel/CarsLogo.png" 

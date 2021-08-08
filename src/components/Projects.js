@@ -33,7 +33,7 @@ class Projects extends React.Component {
             {
                 "name": "eCommerce Image Repository",
                 "online": true,
-                "desc": "Blue Koi Art-Linker is a visualization, eCommerce tool that allows users to view, save, and download art, photos, models, and drafts from all over the internet. Users can sign up, manage their account, search images using an input box and selector, and manage their saved images.",
+                "desc": "Blue Koi Art-Linker is a visualization, eCommerce tool that allows users to view, save, and download art, photos, models, and drafts from all over the internet. Users can sign up, manage their account, search images, and manage their saved images.",
                 "link": "https://github.com/canaleal/BlueKoi",
                 "img1": "src/images/bluekoi/Koiui3.png",
                 "img2": ""
