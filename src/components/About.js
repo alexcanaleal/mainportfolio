@@ -16,8 +16,9 @@ class About extends React.Component {
 
           <div className="col-lg-6">
             <h2>About</h2>
-            <p>I'm a Computer Science Student based in Oakville, Ontario who specializes in Mobile and Web Development.
-              My skills include Web Analytics, Data Analytics and Machine Learning Development.</p>
+            <p>A Computer Science Student based in Oakville, Ontario who specializes in Web Analytics, Data Analytics and Machine Learning Development.</p>
+
+              <a href="projects.html" className="btn btn-d-p btn-lg">Projects</a>
           </div>
 
           <div className="col-lg-3 col-sm-6">

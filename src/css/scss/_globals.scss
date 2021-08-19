@@ -1,27 +1,13 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 
 
 html {
 	scroll-behavior: smooth;
 }
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 }
-
-/*Scroll bar*/
-::-webkit-scrollbar {
-	width: 15px;
-}
-
-::-webkit-scrollbar-track {
-	background: $text-dark;
-}
-
-::-webkit-scrollbar-thumb {
-	background: $text-neon-purple;
-}
-
 
 /*Flex details*/
 .item-col {
@@ -58,6 +44,16 @@ p {
 	color: $text-white;
 }
 
+.btn-d-p{
+
+	background-color: $text-neon-purple;
+	color: $text-white;
+
+	&:hover{
+		background-color: $text-neon-purple-d;
+		color: $text-white;
+	}
+}
 
 
 .special-icons {
@@ -126,18 +122,24 @@ p {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		align-items: center;
+		
 		@include color-animation();
 	}
 
 	&-sm{
-		height: 20px;
+		
 		@include color-animation();
 	}
 
 	
 }
 
+.sticky{
+	position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
 
 
 /*Image details*/

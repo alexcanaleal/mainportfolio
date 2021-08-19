@@ -1,23 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-}
-
-/*Scroll bar*/
-::-webkit-scrollbar {
-  width: 15px;
-}
-
-::-webkit-scrollbar-track {
-  background: #212f3b;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #8a3ffc;
+  font-family: 'Quicksand', sans-serif;
 }
 
 /*Flex details*/
@@ -68,6 +55,16 @@ p {
   color: #fff;
 }
 
+.btn-d-p {
+  background-color: #5c5ef3;
+  color: #fff;
+}
+
+.btn-d-p:hover {
+  background-color: #4547b6;
+  color: #fff;
+}
+
 .special-icons {
   color: white;
   -webkit-transition: 300ms linear all;
@@ -75,7 +72,7 @@ p {
 }
 
 .special-icons:hover {
-  color: #8a3ffc;
+  color: #5c5ef3;
 }
 
 .navbar a {
@@ -85,7 +82,7 @@ p {
 }
 
 .navbar a:hover {
-  color: #8a3ffc;
+  color: #5c5ef3;
 }
 
 .img-bg {
@@ -124,9 +121,6 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-animation-name: backgroundColorPalette;
           animation-name: backgroundColorPalette;
   -webkit-animation-duration: 15s;
@@ -138,7 +132,6 @@ p {
 }
 
 .header-sm {
-  height: 20px;
   -webkit-animation-name: backgroundColorPalette;
           animation-name: backgroundColorPalette;
   -webkit-animation-duration: 15s;
@@ -147,6 +140,14 @@ p {
           animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
           animation-direction: alternate;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 /*Image details*/
@@ -228,36 +229,36 @@ p {
 /* Standard syntax */
 @-webkit-keyframes backgroundColorPalette {
   0% {
-    background: #fa4d56;
+    background: #5c5ef3;
   }
   25% {
     background: #8a3ffc;
   }
   50% {
-    background: #ff0066;
+    background: #3032aa;
   }
   75% {
-    background: #08bdba;
+    background: #6508bd;
   }
   100% {
-    background: #0f62fe;
+    background: #0d48b8;
   }
 }
 @keyframes backgroundColorPalette {
   0% {
-    background: #fa4d56;
+    background: #5c5ef3;
   }
   25% {
     background: #8a3ffc;
   }
   50% {
-    background: #ff0066;
+    background: #3032aa;
   }
   75% {
-    background: #08bdba;
+    background: #6508bd;
   }
   100% {
-    background: #0f62fe;
+    background: #0d48b8;
   }
 }
 

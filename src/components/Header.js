@@ -14,7 +14,8 @@ class Header extends React.Component {
             <div className="container-fluid header-lg text-white">
                 <div className="row mt-5 py-5 text-center">
                     <div className="col-lg-12">
-                        <h2>Machine Learning Developer | Computer Science Student</h2>
+                        <h2>Machine Learning Developer</h2>
+                        <p>Experienced in creating responsive applications built for mobile, desktop & web.</p>
                     </div>
                 </div>
 

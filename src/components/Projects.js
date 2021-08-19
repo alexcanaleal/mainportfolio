@@ -6,22 +6,7 @@ class Projects extends React.Component {
 
     render() {
         const data = [
-            {
-                "name": "Machine Learning Development",
-                "online": true,
-                "desc": "Fracture risk assessments are essential to evaluate and prevent osteoporotic fractures. While it is desirable to collect all relevant data about patients regarding their susceptibility to fractures to make an accurate assessment, in real-world environments osteoporosis patient data can be incorrect, inconsistent, or missing. A crucial component to calculating the fracture risk is the Bone Mineral Density (BMD) T-score (used in fracture risk calculators: e.g., FRAX,  CAROC).",
-                "link": "",
-                "img1": "src/images/voxel/TensorFlow.png",
-                "img2": "src/images/voxel/ML.png"
-            },
-            {
-                "name": "OpenCV Plate and Face Recognition",
-                "online": true,
-                "desc": "Dolor adipisicing officia aliquip elit consectetur commodo sint fugiat. Adipisicing excepteur qui commodo eiusmod est sint. Exercitation eu ipsum ut dolor exercitation cillum adipisicing. Nisi occaecat pariatur nisi laboris est eu deserunt eiusmod aliqua Lorem exercitation adipisicing. Labore qui laborum quis reprehenderit nisi amet nulla magna in occaecat.",
-                "link": "",
-                "img1": "src/images/voxel/Face Detect.png",
-                "img2": "src/images/voxel/CarCV.png"
-            },
+           
             {
                 "name": "Automobile VIN Manager",
                 "online": true,
@@ -37,17 +22,10 @@ class Projects extends React.Component {
                 "link": "https://github.com/canaleal/BlueKoi",
                 "img1": "src/images/bluekoi/Koiui3.png",
                 "img2": ""
-            },
-            {
-                "name": "Toronto Housing Market Analysis",
-                "online": true,
-                "desc": "The Zoocasa API was selected as the resource due to it’s efficient search on currently listed and previously sold properties. The program extracts the data using Beautifulsoup, and cleans the data using Pandas.",
-                "link": "",
-                "img1": "src/images/voxel/Map-NoBg.png",
-                "img2": ""
             }
         ];
 
+      
 
         return (
 
@@ -60,7 +38,7 @@ class Projects extends React.Component {
                             <p>{d.desc}</p>
 
                             {d.link ?
-                                <a href={d.link} target="_blank" className="btn  btn-success">Code</a>
+                                <a href={d.link} target="_blank" className="btn  btn-d-p">Code</a>
                                 :
                                 <p className="text-danger">Link to Code is Currently Down</p>
                             }
@@ -84,7 +62,9 @@ class Projects extends React.Component {
                             :
                             <p></p>
                         }
-
+                        
+                        
+                        
                     </div>
                 ))}
             </div>
