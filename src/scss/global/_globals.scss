@@ -1,0 +1,256 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+
+html {
+	scroll-behavior: smooth;
+}
+body {
+	font-family: 'Quicksand', sans-serif;
+}
+
+/*Flex details*/
+.item-col {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.item-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+    
+    > * {
+        margin: 1rem;
+    }
+}
+
+
+p {
+	font-size: 15px;
+}
+
+/*Colour details*/
+.dark-bg {
+	background-color: $dark-bg;
+}
+
+.gray-bg {
+	background-color: $gray-bg;
+}
+
+.item-white {
+	color: $text-white;
+}
+
+#page-container {
+	position: relative;
+	min-height: 100vh;
+  }
+  
+  #content-wrap {
+	padding-bottom: 2.5rem;    /* Footer height */
+  }
+
+#footer{
+	 width: 100%;
+	position: absolute;
+  	bottom: 0;
+	  height: 2.5rem;  
+}
+
+
+.special-icons {
+	color: white;
+	transition: 300ms linear all;
+
+    &:hover{
+        color: $text-neon-purple;
+    }
+}
+
+
+.navbar {
+
+    a{
+        color: $text-dark;
+       
+        transition: 200ms linear;
+    
+        &:hover{
+            color: $text-neon-purple;
+        }
+    }
+	
+}
+
+
+.img-bg {
+	position: relative;
+	top: 0;
+	left: 0;
+
+	&-back{
+		position: relative;
+		top: 0;
+		left: 0;
+		filter: blur(3px);
+	}
+
+	&-front{
+		position: absolute;
+		top: 10px;
+		left: 10px;
+	}
+
+  }
+
+
+
+.text-color-toggle {
+	color: $text-dark;
+}
+
+@mixin color-animation {
+	animation-name: backgroundColorPalette;
+	animation-duration: 15s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@mixin simple-shadow{
+	box-shadow:         3px 20px 5px 0px rgb(235, 235, 235);
+}
+
+.header {
+
+	
+	&-lg{
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		
+		@include color-animation();
+		@include simple-shadow();
+	}
+
+	&-sm{
+		
+		@include color-animation();
+		@include simple-shadow();
+	}
+
+	
+}
+
+
+
+.btn-d-p{
+
+	background-color: $text-neon-purple;
+	color: $text-white;
+	@include color-animation();
+	&-lg{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		
+		width: 100%;
+		height: 5em;
+		
+	}
+
+	&:hover{
+		
+		background-color: $text-neon-purple-d !important;
+		color: $text-white;
+		
+	}
+}
+
+
+.sticky{
+	position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+
+/*Image details*/
+.responsive {
+	display: block;
+	width: 100%;
+	height: auto;
+
+}
+
+
+
+/*Bootstrap Navbar*/
+.collapsing {
+	position: relative;
+	height: 0;
+	overflow: hidden;
+	-webkit-transition: height 0.8s ease;
+	-o-transition: height 0.8s ease;
+	transition: height 0.8s ease;
+}
+
+.dropdown-menu {
+	-webkit-transition: height 0.8s ease;
+	-o-transition: height 0.8s ease;
+	transition: height 0.8s ease;
+}
+
+/*Navbar btn*/
+.navbar-toggler-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(0,0,0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.navbar-toggler:focus {
+	outline: 0;
+}
+.navbar-nav > li {
+	padding-left: 1rem;
+}
+
+.dropdown-menu .dropdown-item:hover {
+	background-color: transparent;
+}
+
+.light-hover {
+	transition: transform .2s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.grayscale {
+	filter: grayscale(100%);
+	transition: 200ms ease-in-out;
+
+    &:hover {
+        filter: none;
+    }
+}
+
+.text-focus-in {
+	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+
+
+.rotate:hover {
+	animation: rotation 7s infinite linear;
+}
+
+
+.big-icon {
+	font-size: 5rem;
+}

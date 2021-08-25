@@ -2,33 +2,21 @@
 
 const e = React.createElement;
 
-class Projects_Api extends React.Component {
-    constructor(props) {
-        super(props);
-
-    }
+class Projects_React extends React.Component {
 
     render() {
-        const link = "../dist/images/project_api/"
+        const link = "../dist/images/project_react/"
         const data = [
+
             {
-                "name": "Halo Statistics API",
-                "online": true,
-                "desc": "The Halo Statistics API collects and finds the service record details of all Halo Players in Halo 5. The API also returns Spartan images and gamer tags.",
-                "link": "https://developer.haloapi.com/docs/services/58acdf27e2f7f71ad0dad84b/operations/Halo-5-Company",
-                "img1": "halo-0.png",
-                "img2": "halo-1.png"
-            },
-            {
-                "name": "Automobile Logo API",
+                "name": "Illium Stock Manager",
                 "online": false,
-                "desc": "This Vehicle API provides access to a library of vehicle Logos. Instead of using an ID, Logos are retrieved using the Manufacturer Name.",
+                "desc": "ISM can track cryptocurrencies, stocks, funds, commodities, currencies, futures or bonds. It shows the current value of positions and performance over a period of 1 year. The App is currently in development.",
                 "link": "",
-                "img1": "logo-0.png",
-                "img2": "logo-1.png"
+                "img1": "stock-0.png",
+                "img2": "stock-1.png"
             }
         ];
-
 
         const data_length = data.length
         const renderHrLine = index => {
@@ -49,18 +37,18 @@ class Projects_Api extends React.Component {
 
         return (
             <div>
-                <div id="api" className="header-sm ">
+                <div id="react" className="header-sm ">
                     <div className="container text-white py-5">
                         <div className="row">
                             <div className="col-lg-12">
-                                <h3>API Projects</h3>
+                                <h3>React / React Native</h3>
 
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div className="container py-5 ">
+                <div className="container py-5">
                     {data.map((d, index) => (
                         <span key={index}>
                             <div className="row my-4 py-5">
@@ -97,8 +85,6 @@ class Projects_Api extends React.Component {
                     ))}
                 </div>
 
-
-
             </div>
 
 
@@ -108,5 +94,5 @@ class Projects_Api extends React.Component {
 }
 
 
-const domContainer = document.querySelector('#projects_api');
-ReactDOM.render(e(Projects_Api), domContainer);
+const domContainer = document.querySelector('#projects_react');
+ReactDOM.render(e(Projects_React), domContainer);

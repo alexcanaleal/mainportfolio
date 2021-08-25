@@ -11,7 +11,7 @@ class Footer extends React.Component {
   render() {
 
     return (
-        <footer>
+      
             <div className="item-col dark-bg text-white py-5">
                 <div className="item-row">
                     <a className="special-icons" rel="noopener" href="https://www.linkedin.com/in/alex-canales" target="_blank"><i
@@ -25,7 +25,7 @@ class Footer extends React.Component {
                 </div>
                 <p>alexcanales766@gmail.com</p>
             </div>
-        </footer>
+      
       );
   }
 }

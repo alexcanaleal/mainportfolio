@@ -2,30 +2,27 @@
 
 const e = React.createElement;
 
-class Projects_Api extends React.Component {
-    constructor(props) {
-        super(props);
-
-    }
+class Projects_Web extends React.Component {
 
     render() {
-        const link = "../dist/images/project_api/"
+        const link = "../dist/images/project_web/"
         const data = [
+
             {
-                "name": "Halo Statistics API",
+                "name": "Automobile VIN Manager",
                 "online": true,
-                "desc": "The Halo Statistics API collects and finds the service record details of all Halo Players in Halo 5. The API also returns Spartan images and gamer tags.",
-                "link": "https://developer.haloapi.com/docs/services/58acdf27e2f7f71ad0dad84b/operations/Halo-5-Company",
-                "img1": "halo-0.png",
-                "img2": "halo-1.png"
+                "desc": "VIN Vault is a fully usable data visualization and service report able to locate and find the details of any vehicle in the NHTSA database. With it’s easy to use/ seamless setup, users are be able to view VINs by either scanning or typing in the VIN.",
+                "link": "https://bitbucket.org/Canaleal/vinvault/src/master/",
+                "img1": "vin-0.png",
+                "img2": ""
             },
             {
-                "name": "Automobile Logo API",
-                "online": false,
-                "desc": "This Vehicle API provides access to a library of vehicle Logos. Instead of using an ID, Logos are retrieved using the Manufacturer Name.",
-                "link": "",
-                "img1": "logo-0.png",
-                "img2": "logo-1.png"
+                "name": "eCommerce Image Repository",
+                "online": true,
+                "desc": "Blue Koi Art-Linker is a visualization, eCommerce tool that allows users to view, save, and download art, photos, models, and drafts from all over the internet. Users can sign up, manage their account, search images, and manage their saved images.",
+                "link": "https://github.com/canaleal/BlueKoi",
+                "img1": "koi-0.png",
+                "img2": ""
             }
         ];
 
@@ -47,13 +44,15 @@ class Projects_Api extends React.Component {
             </div>
         };
 
+
+
         return (
             <div>
-                <div id="api" className="header-sm ">
+                <div id="web" className="header-sm ">
                     <div className="container text-white py-5">
                         <div className="row">
                             <div className="col-lg-12">
-                                <h3>API Projects</h3>
+                                <h3>Web Applications</h3>
 
                             </div>
                         </div>
@@ -97,8 +96,6 @@ class Projects_Api extends React.Component {
                     ))}
                 </div>
 
-
-
             </div>
 
 
@@ -108,5 +105,5 @@ class Projects_Api extends React.Component {
 }
 
 
-const domContainer = document.querySelector('#projects_api');
-ReactDOM.render(e(Projects_Api), domContainer);
+const domContainer = document.querySelector('#projects_web');
+ReactDOM.render(e(Projects_Web), domContainer);
