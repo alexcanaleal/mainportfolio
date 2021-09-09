@@ -2,7 +2,7 @@
 
 const e = React.createElement;
 
-class Project_Type_List extends React.Component {
+class Project_List_Type extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -18,7 +18,7 @@ class Project_Type_List extends React.Component {
     ]
 
     return (
-      <div className="container py-5 my-5">
+      <div id="project_list_type" className="container py-5 my-5">
         <div className="row ">
 
           <div className="col-lg-6">
@@ -41,5 +41,5 @@ class Project_Type_List extends React.Component {
   }
 }
 
-const domContainer = document.querySelector('#project_type_list');
-ReactDOM.render(e(Project_Type_List), domContainer);
+const domContainer = document.querySelector('#project_List_Type');
+ReactDOM.render(e(Project_List_Type), domContainer);

@@ -15,7 +15,7 @@ class Header extends React.Component {
                 <div className="row mt-5 py-5 text-center">
                     <div className="col-lg-12">
                         <h2>Machine Learning Developer</h2>
-                        <p>Experienced in creating responsive applications built for mobile, desktop & web.</p>
+                        <p>Experienced creating responsive applications for mobile, desktop & web.</p>
                     </div>
                 </div>
 

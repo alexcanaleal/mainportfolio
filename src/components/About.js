@@ -24,7 +24,8 @@ class About extends React.Component {
             <h2>About</h2>
             <p>A Computer Science Student based in Oakville, Ontario who specializes in Front-End, Mobile, Machine Learning Development.</p>
 
-              <a href="#project_type_list" className="btn btn-d-p btn-lg my-2">Project List</a>
+              <a href="#project_list_type" className="btn btn-d-p btn-lg my-2">Project List</a>
+              <a href="#publications" className="btn btn-d-p btn-lg ml-2 my-2">Publications</a>
           </div>
 
          {data.map((d, index) => (

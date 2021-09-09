@@ -14,7 +14,7 @@ class Projects_Api extends React.Component {
             {
                 "name": "Halo Statistics API",
                 "online": true,
-                "desc": "The Halo Statistics API collects and finds the service record details of all Halo Players in Halo 5. The API also returns Spartan images and gamer tags.",
+                "desc": "The API officially used by Halo Waypoint, this service allows developers to return details about different players and their service records. This includes Win/Loss ratio, hours played, spartan armour used, and favorite game modes.",
                 "link": "https://developer.haloapi.com/docs/services/58acdf27e2f7f71ad0dad84b/operations/Halo-5-Company",
                 "img1": "halo-0.png",
                 "img2": "halo-1.png"
